@@ -1,0 +1,24 @@
+<my-header titulo="Kaypic"></my-header>
+
+<div class="container">
+
+    <p ng-show="mensagem.length" class="alert alert-info text-center">{{mensagem}}</p>
+
+    <div class="container row">
+            <div class="col-md-2 form-group">
+                <a href="fotos/new" class="btn btn-primary">Adicionar Foto</a>
+            </div>
+            <div class="col-md-10 form-group">
+                <input ng-model="filtro" type="text" class="form-control w-100" placeholder="filtrar...">
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-3 animated-card" ng-repeat="foto in fotos | filter: filtro">
+            <my-card titulo="{{foto.titulo}}" imagem="{{foto.url}}">
+                <a href="fotos/edit/{{foto._id}}" class="btn btn-primary btn-block">Editar</a>
+                <my-delete-button acao="remover(foto)" titulo="Remover"></my-delete-button>
+            </my-card>
+        </div>
+    </div>
+</div>

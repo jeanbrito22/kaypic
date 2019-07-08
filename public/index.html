@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html ng-app="kaypic">
+    <head>
+
+        <base href="/">
+
+        <link rel="stylesheet" type="text/css" href="./css/effects.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-resource.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-animate.min.js" type="text/javascript"></script>
+
+        <script src="./js/main.js" type="text/javascript"></script>
+        
+        <script src="./js/controllers/fotos-controller.js" type="text/javascript"></script>
+        <script src="./js/controllers/foto-controller.js" type="text/javascript"></script>
+        <script src="./js/controllers/grupos-controller.js" type="text/javascript"></script>
+
+        <script src="./js/directives/layout-directives/layout-directives.js" type="text/javascript"></script>
+        <script src="./js/directives/layout-directives/my-card/my-card.js" type="text/javascript"></script>
+        <script src="./js/directives/layout-directives/my-delete-button/my-delete-button.js" type="text/javascript"></script>
+        <script src="./js/directives/layout-directives/my-header/my-header.js" type="text/javascript"></script>
+
+        
+        <script src="./js/services/services-module.js" type="text/javascript"></script>
+        <script src="./js/services/foto-request-service.js" type="text/javascript"></script>
+        <script src="./js/services/cadastro-foto-service.js" type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,7 @@
+.animated-card.ng-leave-active {
+    transform: scale(0.1);
+}
+
+.animated-card {
+    transition: transform .8s;
+}
